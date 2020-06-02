@@ -8,6 +8,8 @@ describe('DefaultFieldStringifier', () => {
 
     describe('When field delimiter is semicolon', generateTestCases(';'));
 
+    describe('When field delimiter is a pipe', generateTestCases('|'));
+
     describe('When all fields needs to be quoted', () => {
         const stringifier = createFieldStringifier(',', true);
 
